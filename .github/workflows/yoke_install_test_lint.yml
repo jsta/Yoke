@@ -33,7 +33,7 @@ jobs:
         pytest -v --cov-report=lcov:./coverage/lcov.info --cov=yoke -Werror
 
     - name: Upload coverage to Coveralls
-      uses: coverallsapp/github-action@v1
+      uses: coverallsapp/github-action@v2
 
     - name: Lint Yoke
       run: |
